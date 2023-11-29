@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("Code") {
             steps {
-                git url: "https://github.com/iamamash/2048.git", branch: "master" 
+                git url: "https://github.com/Simbaa815/2048-devops-project.git", branch: "master" 
             }
         }
         stage("Build and Test") {
