@@ -11,8 +11,7 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 COPY . /var/www/html/
 
 # Expose port 80 for web traffic
-# EXPOSE 80
-EXPOSE 85
+EXPOSE 80
 
 # Define the default command to start Nginx with the specified config file
 CMD ["/usr/sbin/nginx", "-c", "/etc/nginx/nginx.conf"]
