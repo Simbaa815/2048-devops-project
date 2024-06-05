@@ -4,4 +4,4 @@ services:
   2048-game:
     image: "simbaa815/2048-game"
     ports:
-      - 8000:8000
+      - 80:80
