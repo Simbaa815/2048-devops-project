@@ -14,11 +14,8 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 587
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
           subject: Commit Notification
           to: ${{ secrets.EMAIL_TO }}
-          from: ${{ secrets.EMAIL_USERNAME }}
           body: |
             A new commit has been made to the repository on branch ${{ github.ref }}.
             Commit message: ${{ github.event.head_commit.message }}
