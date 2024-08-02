@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send Email
-        uses: dawidd6/action-send-mail@v2
+        uses: actions/checkout@v2
         with:
           to: ${{ secrets.EMAIL_TO }}
           subject: Commit Notification
